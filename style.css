@@ -1,0 +1,250 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+#spawnContent {
+    font-family: bebas;
+    color: white;
+    place-items: auto;
+    height: 100vh;
+    width: 100vw;
+}
+#ban {
+    font-family: bebas;
+    text-align: center;
+    font-size: 20vh;
+    color: #29abe2;
+}
+#content {
+    font-family: bebas;
+    display: block;
+    font-size: 4vh;
+    color: white;
+    height: 70%;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    /*background: linear-gradient(45deg, rgba(0,252,255,1) 0%, rgba(74,145,244,1) 33%, rgba(151,35,232,1) 66%, rgba(199,0,242,1) 100%);*/
+    border-top: solid #29abe2 4px;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+#header {
+    text-align: center;
+    width: 100%;
+    height: 15%;
+}
+#hello {
+    margin: 0;
+    color: #ffffff;
+    font-size: 5vh;
+}
+#freeday {
+    margin: -3vh;
+    color: #29abe2;
+    font-family: freeday;
+    font-size: 16vh;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+ul li {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.inputText {
+    width: 10vw;
+    text-align: center;
+    border-left: 5px #29abe2 solid;
+    border-right: 5px #29abe2 solid;
+    border-top: none;
+    border-bottom: none;
+    height: 4vh;
+}
+.inputText:hover {
+    animation-name: extension;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.inputText:focus,
+.inputText:focus:hover,
+.inputText:valid {
+    width: 15vw;
+    animation-name: none;
+}
+.blue,
+.check {
+    font-size: 3vh;
+    background-color: #29abe2;
+    border: none;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.blue[type='button'],
+.blue[type='submit'],
+#backButton {
+    padding: 1vh;
+    font-family: bebas;
+    color: white;
+}
+li label {
+    margin-left: 1vw;
+    scale: 1.2;
+}
+.inputText[name='notEmpty'] {
+    animation-name: none;
+    width: 15vw;
+}
+a,
+a:visited,
+a:hover,
+a:active,
+a:link {
+    color: white;
+    font-size: 3vh;
+    text-decoration: none;
+}
+#remember {
+    position: absolute;
+    top: 45%;
+    margin-left: 20px;
+}
+#regHello {
+    font-size: 9vh;
+    margin: 1vh;
+    color: #29abe2;
+}
+#highwayToHeaven {
+    margin-top: -1vh;
+}
+#clear {
+    float: none;
+    clear: both;
+}
+#left,
+#right {
+    width: 50%;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}
+#_remember {
+    scale: 1.5;
+}
+#alert {
+    color: red;
+}
+#loginAlert {
+    color: red;
+}
+#loadingIcon img,
+#loadingIcon {
+    width: 15vw;
+    margin-top: -6vh;
+}
+#lastUpdates {
+    width: 80%;
+    text-align: center;
+    font-size: 4vh;
+    margin-top: -20vh;
+    border-top: solid #29abe2 4px;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 40vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+#middlePanel {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+#leftPanel,
+#rightPanel {
+    width: calc(25% - 2px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#leftPanel {
+    float: left;
+    text-align: center;
+    border-right: 2px solid #29abe2;
+}
+#rightPanel {
+    float: right;
+    border-left: 2px solid #29abe2;
+}
+#leftPanel > label {
+    font-size: 7vh;
+}
+#leftPanel > label > label {
+    color: #29abe2;
+}
+label[for='mirror'],
+label[for='rockford'],
+label[for='paleto'],
+label[for='lsAirport'] {
+    font-size: 4vh;
+}
+div.spawner > img {
+    outline: 1px solid white;
+    border-right: 4px solid #29abe2;
+    border-radius: 5px;
+}
+div.spawner > img {
+    width: 70%;
+}
+#changelog {
+    list-style-type: circle;
+}
+#changelog li {
+    margin: auto;
+}
+#additionalSpawns {
+    height: 10vh;
+}
+.spawnerSmall {
+    float: left;
+    height: 10vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.spawnerSmall img {
+    height: 80%;
+}
+.spawnerSmall label {
+    font-size: 3vh;
+    text-align: center;
+}
+@keyframes extension {
+    from {
+        width: 10vw;
+    }
+    to {
+        width: 15vw;
+    }
+}
+@font-face {
+    font-family: freeday;
+    src: url(assets/fonts/FREEDAY.ttf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(assets/fonts/BebasNeue-Regular.ttf);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Panel logowania</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <p id="regHello">REJESTRACJA</p>
+                <p id="highwayToHeaven">O krok od nieba...</p>
+            </div>
+            <br><br>
+            <div id=registerForm>
+                <div id="form">
+                    <form name="register" onsubmit="return false">
+                        <ul id="left">
+                            <li>LOGIN:<br><input type="text" id="login" required placeholder="LOGIN" onchange="isEmpty(this)" pattern="[A-Za-z\d]{6,}" class="inputText" oninvalid="this.setCustomValidity('Małe, duże litery i cyfry, co najmniej 6 znaków')" oninput="this.setCustomValidity('')"></li>
+                            <li>EMAIL:<br><input type="text" id="email" required placeholder="przyklad@cos.pl" onchange="isEmpty(this)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="inputText" oninvalid="this.setCustomValidity('Ten email jest nieprawidłowy')" oninput="this.setCustomValidity('')"></li>
+                        </ul>
+                        <ul id="right">
+                            <li>HASŁO:<br><input type="password" id="pass" required placeholder="HASŁO" onchange="isEmpty(this)" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity('co najmniej 8 znaków, przynajmniej jedna cyfra, jedna duża litera i jedna mała litera')" oninput="this.setCustomValidity('')" class="inputText"></li>
+                            <li>POWTÓRZ HASŁO:<br><input type="password" id="repPass" required placeholder="POWTÓRZ HASŁO" onchange="isEmpty(this)" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="inputText" oninvalid="this.setCustomValidity('Hasła nie zgadzają się!')" oninput="this.setCustomValidity('')" ></li>
+                        </ul>
+                            <br><p id="clear"><a href="index.html"><button type="button" id="backButton" class="blue">PANEL LOGOWANIA</button></a><input id="registerButton" type="submit" class="blue" value="ZAREJESTRUJ!" onclick="getRegisterData()"></p>
+                    </form>
+                </div>
+                <div id="alert">
+                </div>
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>

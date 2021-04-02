@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Panel logowania</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="spawnContent">
+            <div id="leftPanel">
+                <label>WYBIERZ MIEJSCE<br>
+                <label>SPAWNU</label></label>
+                <div class="spawner" id="spawnMirror" onclick="spawnme(1)">
+                    <label for="mirror">Mirror</label><br>
+                    <img src='assets/img/mirror.png' alt="Tu będzie zdjęcie">
+                </div><br>
+                <div class="spawner" id="spawnRock" onclick="spawnme(2)">
+                    <label for="rockford">Rockford</label><br>
+                    <img src='assets/img/rokcford.png' alt="Tu będzie zdjęcie">
+                </div><br>
+                <div class="spawner" id="spawnPaleto" onclick="spawnme(3)">
+                    <label for="paleto">Paleto</label><br>
+                    <img src='assets/img/paleto.png' alt="Tu będzie zdjęcie">
+                </div><br>
+                <div class="spawner" id="spawnAirport" onclick="spawnme(4)">
+                    <label for="lsAirport">Lotnisko LS</label><br>
+                    <img src='assets/img/lsairport.png' alt="Tu będzie zdjęcie">
+                </div><br>
+                <div id="additionalSpawns">
+
+                </div>
+            </div>
+            <div id="middlePanel">
+                <div id="loadingIcon">
+                    <img src="assets/img/Heaven.gif">
+                </div>
+                <div id="lastUpdates">
+                    Ostatnie aktualizacje:<br>
+                    <ul id="changelog">
+                        <li>17.03.2020 - Rozpoczęcie pracy nad projektem.</li>
+                        <li>Coming soon.</li>
+                        <li>Coming soon.</li>
+                        <li>Coming soon.</li>
+                        <li>Coming soon.</li>
+                        <li>Coming soon.</li>
+                        <li>Coming soon.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rightPanel">
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
